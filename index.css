@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', 'sans-serif';
+}
+a:hover{
+    text-decoration: none;
+}
+
+header{
+    z-index: 1000;
+}
+
+/* top nav */
+.top-nav{
+    background-color: #eaeaea;
+    font-size:13px;
+    border:1px solid #eaeaea;
+}
+
+.header{
+    position:fixed;
+}
+
+li{
+    list-style-type: none;
+}
+
+li a{
+    color:#4a4a4a;
+}
+
+li a:hover{
+    color:#4a4a4a;
+}
+
+.why-licious::after,.certification::after,.about-us::after,.careers::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: #b4b4b4;
+    border: 1px solid #b4b4b4;
+    top: 10px;
+    margin:-1px 12px;
+    border-radius: 50%;
+}
+
+.download,.about-us,.careers,.contact-us{
+    margin-left:32px;
+}
+
+.download a{
+    margin-left: 10px;
+}
+
+.firstDiv{
+    margin-bottom: -14px;
+}  
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .firstDiv{
+        display: flex;
+        justify-content: space-between;
+    } 
+}
+
+/* sub header */
+
+
+/* #LiciousLogo{
+    padding: 25px;
+    width: 95px;
+    height: 36.67px;
+} */
+
+/* #tsd{
+    width: 11%;
+}
+
+#tsd1{
+    display: flex;
+    width: 12%;
+}
+
+.loca{
+    width: 25px;
+    height: 25px;
+    margin-top:20px;
+}
+
+#loctext{
+    width: 150px;
+    height: 70px;
+    margin: auto;
+}
+#loctext>p{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bolder;
+    margin: auto;
+    margin-left: 4px;
+    margin-top: 10px;
+    
+}
+#location{
+    margin-top: 5px;
+    width: 85px;
+    border: none;
+}
+#tsd2{
+    width: 35%;
+}
+
+#tsd3{
+    display: flex;
+    
+    width: 8%;
+}
+
+.login{
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-top:15px;
+}
+.login>img{
+    padding: 7.5px;
+}
+
+#login{
+    height: 30px;
+    width: 60px;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+#logintext{
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 5px;
+    color: black;
+    margin: auto;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#logintext:hover{
+
+    color: red;
+    border: none;
+}
+#tsd4{
+    display: flex;
+    width: 8%;
+}
+.Cart{
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+}
+#carttext{
+    
+    height: 30px;
+    width: 60px;
+    margin-top: 25px;
+    margin-left: 3px;
+}
+.textforcard{
+    
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+
+
+#liciousway{
+    width: 70%;
+    height: 130px;
+    margin: auto;
+    margin-top: 10px;
+}
+#liciousway>img{
+    width: 100%;
+    height: 130px;
+} */
+
+.sub-header{
+    background-color: #fff;
+}
+.secondDiv{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secondDiv a{
+    color:#4a4a4a;
+}
+
+.location-container{
+    display: flex;
+}
+
+.location{
+    width: 120px;
+    border: none;
+}
+
+.loca{
+    width: 25px;
+    height: 25px;
+    margin-top:14px;
+}
+
+.loctext{
+    width: 150px;
+    height: 70px;
+    margin: auto;
+}
+.loctext>p{
+    font-size: 12px;
+    font-weight: bolder;
+    margin: auto;
+    margin-left: 4px;
+    margin-top: 14px;
+}
+
+.search-container{
+    border: 1px solid #4a4a4a;
+    border-radius:8px;
+    background-color: #f8f8f8;
+    width:35%;
+    margin:5px;
+}
+
+.search{
+    padding:8px 0;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+}
+.search-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.search-content:hover{
+    padding: 0 20px;
+    transition: .3s;
+}
+
+/*category-container*/
+.category-container,.login-container,.cart-container{
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.category-title{
+    margin-left: 10px;
+}
+
+
+
+
+
+/* .dropbtn {
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;} */
+
+
+
+.login-container img,.cart-container img{
+    width: 29px;
+    height:29px;
+}
+
+.categories-container a,.login-container a,.cart-container a{
+    margin-left:8px;
+    align-self: center;;
+}
+
+.categories-container a:hover,.login-container a:hover,.cart-container a:hover{
+    color:#d11243;
+}
+@media screen and (max-width: 768px){
+    .placeholder{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px){
+    .search{
+        padding:8px 0;
+        background:transparent;
+        border:none;
+        cursor:pointer;
+        font-size: 15px;
+        
+    }
+    .search-content{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    
+    .search-content:hover{
+        padding: 0 20px;
+        transition: .3s;
+    }
+
+    
+}
+
+/*main*/
+
+main{
+    /* height:200vh; */
+    background-color: #f7f6f6;
+    margin-top:100px;
+}
+
+.category-heading{
+    font-size:22px;
+    line-height: 24px;
+    font-weight: 600;
+    color:#4a4a4a;
+}
+
+.sub-title-text{
+    font-size:14px;
+    line-height: 17px;
+    font-weight: 400;
+    color:#959799;
+}
+
+.category-image {
+    border-radius: 16px;
+}
+
+.category-image:hover{
+    padding: 5px;
+    transition: .3s all ease-in-out;
+}
+
+.category-section {
+    border-radius: 16px;
+    background-color: #fff;
+}
+.category{
+    text-align: center;
+}
+.category-name{
+    font-family: 'Lato';
+    font-weight:700;
+    font-size: 16px;
+    line-height: 24px;
+    color:#3e4d60;
+}
