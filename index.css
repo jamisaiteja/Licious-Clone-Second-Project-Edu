@@ -195,9 +195,10 @@ li a:hover{
     height: 130px;
 } */
 
-.sub-header{
+.sub-header, .menu{
     background-color: #fff;
 }
+
 .secondDiv{
     background-color: #fff;
     display: flex;
@@ -205,7 +206,7 @@ li a:hover{
     align-items: center;
 }
 
-.secondDiv a{
+.secondDiv a,.menu a{
     color:#4a4a4a;
 }
 
