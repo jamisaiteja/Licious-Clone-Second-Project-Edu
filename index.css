@@ -74,127 +74,6 @@ li a:hover{
 
 /* sub header */
 
-
-/* #LiciousLogo{
-    padding: 25px;
-    width: 95px;
-    height: 36.67px;
-} */
-
-/* #tsd{
-    width: 11%;
-}
-
-#tsd1{
-    display: flex;
-    width: 12%;
-}
-
-.loca{
-    width: 25px;
-    height: 25px;
-    margin-top:20px;
-}
-
-#loctext{
-    width: 150px;
-    height: 70px;
-    margin: auto;
-}
-#loctext>p{
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: bolder;
-    margin: auto;
-    margin-left: 4px;
-    margin-top: 10px;
-    
-}
-#location{
-    margin-top: 5px;
-    width: 85px;
-    border: none;
-}
-#tsd2{
-    width: 35%;
-}
-
-#tsd3{
-    display: flex;
-    
-    width: 8%;
-}
-
-.login{
-    border: 1px solid black;
-    height: 40px;
-    width: 40px;
-    margin-left: 10px;
-    border-radius: 50px;
-    margin-top:15px;
-}
-.login>img{
-    padding: 7.5px;
-}
-
-#login{
-    height: 30px;
-    width: 60px;
-    margin-top: 12px;
-    margin-left: 3px;
-}
-#logintext{
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: bolder;
-    margin-left: 5px;
-    color: black;
-    margin: auto;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-}
-#logintext:hover{
-
-    color: red;
-    border: none;
-}
-#tsd4{
-    display: flex;
-    width: 8%;
-}
-.Cart{
-    width: 25px;
-    height: 25px;
-    margin-top: 25px;
-}
-#carttext{
-    
-    height: 30px;
-    width: 60px;
-    margin-top: 25px;
-    margin-left: 3px;
-}
-.textforcard{
-    
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: bolder;
-}
-
-
-
-#liciousway{
-    width: 70%;
-    height: 130px;
-    margin: auto;
-    margin-top: 10px;
-}
-#liciousway>img{
-    width: 100%;
-    height: 130px;
-} */
-
 .sub-header, .menu{
     background-color: #fff;
 }
@@ -309,45 +188,6 @@ li a:hover{
     padding: 5px;
 }
 
-/* .categories-container:hover .categories-link{
-    background-color: #fff;
-} */
-
-/* .dropbtn {
-    background-color: transparent;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: transparent;} */
-
-
 
 .login-container img,.cart-container img{
     width: 29px;
@@ -393,7 +233,6 @@ li a:hover{
 /*main*/
 
 main{
-    height:400vh;
     background-color: #f7f6f6;
     margin-top:100px;
 }
@@ -434,4 +273,8 @@ main{
     font-size: 16px;
     line-height: 24px;
     color:#3e4d60;
+}
+
+.card{
+    border-radius: 16px;
 }
