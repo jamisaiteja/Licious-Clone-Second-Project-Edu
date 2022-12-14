@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <title>Order Meat Online - Buy Fresh & High Quality Meat at Best Prices only on Licious</title>
     <link href="https://i.ibb.co/XbmjWbN/android-chrome-192x192.png" rel="icon"/>
     <!-- font awesome -->
@@ -62,7 +65,7 @@
         </div>
         <div class="sub-header d-none d-md-block">
             <div class="container">
-                <div class="row secondDiv">
+                <div class="secondDiv">
                     <!-- licious logo -->
                     <div class="logo"> 
                         <a href="/index.html"><img class="LiciousLogo" src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="Licious"></a>
@@ -102,7 +105,7 @@
                     <div class="search-container">
                             <div id="search" class="search">
                                     <div class="search-content">
-                                        <a href="./index.css" class="placeholder">Search for any delicious product</a>
+                                        <span><a href="./index.css" class="placeholder"></a>Search for any delicious product</span>
                                         <a href=""><img src="https://www.licious.in/img/default/search_icon.svg" alt=""></a>
                                     </div>
                                     <!-- <a href=""></a> -->
@@ -113,23 +116,11 @@
                     </div>
 
                     <div class="categories-container">
-                        <!-- <img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="User"> -->
-                        <!-- <a href="">Categories</a> -->
-                        <!-- <ul class="category-dropdown">
-                            <li>
-                                <a href=""><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="User">    Categories</a>
-                                <ul class="dropdown">
-                                    <li><a href="#"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="User"> C++</a></li>
-                                    <li><a href="#"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="User"> JAVA</a></li>
-                                    <li><a href="#"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="User"> PHP</a></li>
-                                </ul>
-                            </li>
-                        </ul> -->
                         <a href="" class="categories-link"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="User"><a href="" class="category-title">Categories</a></a>
                         <div class="categories-dropdown">
                             <a href="#">
                                 <img class="categories-dropdown-img" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/cb6e4eb8-6aec-7872-1638-0c2cf7970b71/original/Todays_Deals.png" alt="User">
-                                <span class="category-dropdown-title">Categories</span>
+                                <span class="category-dropdown-title">Today deals</span>
                             </a>
                             <a href="#">
                                 <img class="categories-dropdown-img" src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/34466dbd-a515-edd1-3e99-05000f217cb6/original/Chicken_(2).png" alt="User">
@@ -192,6 +183,11 @@
                         <!-- <div class="carttext"> -->
                             <a class="textforcard" href="#">Cart</a>
                         <!-- </div> -->
+                    </div>
+
+                    <div class="light-dark-mode">
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/9GWjMtS/lighton-removebg-preview.png" alt="lighton-removebg-preview" id="light" class="bulb-image"></a>
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/2tzw6HC/lightoff-removebg-preview.png" alt="lightoff-removebg-preview"  id="light" class="bulb-image"></a>
                     </div>
                 </div> 
             </div>
@@ -260,16 +256,16 @@
     </header>
     <main>
         <div class="carsousal">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                </ol>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_63630e9d6ba0e" class="d-block w-100" alt="Today-Deals">
@@ -293,14 +289,14 @@
                         <img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b7acabe3b2" class="d-block w-100" alt="Ready to eat chicken,fish,prawn & egg spreads!">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <div class="container">
@@ -405,330 +401,703 @@
                         </div>
                         <a href="" title="Buy Gourmet"><span class="category-name">Gourmet</span></a>
                 </div>
-                <div class="col-12 mt-2">
+                <div class="col-12 mt-3">
                     <h3 class="category-heading mb-3">Best Sellers </h3>
                 </div>
                 
-                <div class="d-flex">
-                    <div class="d-flex flex-column justify-content-center mr-3">
-                        <a class="mb-3" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                            <i class="fa-sharp fa-solid fa-chevron-left"></i>
-                        </a>
-                    </div>
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper d-flex">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 179</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 189</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 199</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-        
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-        
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper d-flex">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 279</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 289</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 299</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-        
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-        
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="Chicken curry cuts Image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
-        
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper d-flex">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 379</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 389</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
-                                                <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
-                                                <p>500gm</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <p>MRP: &#8377; 179</p>
-                                                    <button>Add to Cart</button>
-                                                </div>
-                                                <div class="text-center">
-                                                    <img src="" alt="">
-                                                    <p>Tomorrow <b>8AM - 11AM</b></p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 399</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" d-flex flex-column justify-content-center ml-3">
-                        <a class="mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                
 
-                <div class="col-12 mt-2">
+                <div id="carouselExampleControls1" class="carousel carousel-dark slide d-md-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 179</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 279</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 379</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 479</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 579</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 679</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 779</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 879</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 979</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+
+                <div class="col-12 mt-3">
                     <h3 class="category-heading mb-3">Boneless Cuts </h3>
                 </div>
-                
-                <div class="d-flex">
-                    <div class="d-flex flex-column justify-content-center mr-3">
-                        <a class="mb-3" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                            <i class="fa-sharp fa-solid fa-chevron-left"></i>
-                        </a>
-                    </div>
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            </div>
+
+                <div id="carouselExampleControls2" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper d-flex">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 179</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class=" col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 189</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 199</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-        
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-        
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper d-flex">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 279</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 289</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 299</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-        
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-        
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-                                            </div>
-        
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper d-flex">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 379</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 389</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                        <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                        <p>500gm</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>MRP: &#8377; 399</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="" alt="">
+                                            <p>Tomorrow <b>8AM - 11AM</b></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" d-flex flex-column justify-content-center ml-3">
-                        <a class="mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 
+                <div id="carouselExampleControls3" class="carousel carousel-dark slide d-md-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 179</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 279</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 379</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 479</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 579</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 679</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 779</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 879</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="img-fluid" alt="100%x280" src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/47789899-b679-281d-2ae3-6d6f92e296e0/original/shot.jpg?format=webp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Curry Cut - Small Pieces</h5>
+                                    <p class="card-text">Small pieces of bone-in & boneless chicken for curries</p>
+                                    <p>500gm</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p>MRP: &#8377; 979</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="" alt="">
+                                        <p>Tomorrow <b>8AM - 11AM</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
@@ -737,6 +1106,7 @@
     </footer>
     
     <!-- aos data -->
+    <script src="./index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

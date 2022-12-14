@@ -87,6 +87,7 @@ li a:hover{
 
 .secondDiv a,.menu a{
     color:#4a4a4a;
+    text-decoration: none;
 }
 
 .location-container{
@@ -141,6 +142,7 @@ li a:hover{
     padding: 0 20px;
     transition: .3s;
 }
+
 
 /*category-container*/
 .category-container,.login-container,.cart-container{
@@ -230,11 +232,20 @@ li a:hover{
     
 }
 
+.bulb-image {
+    width: 30px;
+    height:40px;
+}
+
 /*main*/
 
 main{
     background-color: #f7f6f6;
     margin-top:100px;
+}
+
+main a{
+    text-decoration: none;
 }
 
 .category-heading{
@@ -275,6 +286,32 @@ main{
     color:#3e4d60;
 }
 
-.card{
-    border-radius: 16px;
+
+/* @media screen and (min-width:768px){ */
+    /* .cards-wrapper{
+        display:flex;
+    } */
+/* } */
+
+
+.carousel-control-prev ,.carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding:8px;
 }
+
+.card{
+    border-radius: 0 0 16px 16px;
+    margin:0 .5em;
+    /* width:calc(100%/3); */
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+/* .card img{
+    max-width: 100%;
+    max-height: 100%;
+} */
