@@ -28,6 +28,7 @@ li{
 
 li a{
     color:#4a4a4a;
+    text-decoration: none;
 }
 
 li a:hover{
@@ -145,14 +146,12 @@ li a:hover{
 
 
 /*category-container*/
-.category-container,.login-container,.cart-container{
+/* .category-container,.login-container,.cart-container{
     font-size: 14px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-}
+} */
 
-.category-dropdown-title{
+/* .category-dropdown-title{
     padding-left: 8px;
 }
 
@@ -179,6 +178,14 @@ li a:hover{
     color:#4a4a4a;
 }
 
+.categories-dropdown a:hover .categories-dropdown-1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:200px;
+    top:0;
+    background-color: #d6cbcb;
+}
 .categories-dropdown-img{
     width:50px;
     height:40px;
@@ -188,6 +195,13 @@ li a:hover{
     display: flex;
     flex-direction: column;
     padding: 5px;
+} */
+/* .categories-dropdown-img{
+    width:50px;
+    height:40px;
+}
+.category-dropdown-title{
+    padding-left: 8px;
 }
 
 
@@ -203,7 +217,114 @@ li a:hover{
 
 .categories-container a:hover,.login-container a:hover,.cart-container a:hover{
     color:#d11243;
+} */
+
+.menu-bar {
+    /* background-color: var(--color-black); */
+    /* height: 80px;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 5%; */
+    position: relative;
+    font-size: 14px;
 }
+
+.title{
+    margin-left: 10px;
+}
+
+.menu-image{
+    width:22px;
+    height: 22px;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.menu-bar ul li a {
+    /* font-size: 20px; */
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color:#d11243;
+}
+
+/* .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+} */
+
+  /* dropdown menu style */
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    /* top: 100%; */
+    background-color: #d6cbcb;
+    /* opacity: .7; */
+    border-radius: 8px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width:190px;
+    padding: 10px;
+    border-bottom:1px solid #e4d8d8;
+}
+
+.dropdown-menu ul li:hover{
+    background-color: #fff;
+    opacity: 1;
+    color:#4a4a4a;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.dropdown-menu-1 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 190px;
+    top: 0vh;
+    background-color: #d6cbcb;
+    border-radius: 8px;
+}
+
+.categories-dropdown-img{
+    width:40px;
+    height:30px;
+}
+.category-dropdown-title{
+    padding-left: 8px;
+}
+
 @media screen and (max-width: 768px){
     .placeholder{
         display: none;
@@ -306,7 +427,7 @@ main a{
 
 .card{
     border-radius: 0 0 16px 16px;
-    margin:0 .5em;
+    margin:0 .7em;
     /* width:calc(100%/3); */
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
@@ -315,3 +436,70 @@ main a{
     max-width: 100%;
     max-height: 100%;
 } */
+
+/* .chunky-img{
+    width: 368px;
+    height:230px;
+} */
+
+.card-title{
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #4a4a4a;
+}
+
+.card-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #727272;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+.weight{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #4a4a4a;
+}
+
+.MRP{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #d11243;
+}
+
+.addToCartBtn{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #d11243;
+    height: 36px;
+    width: 100px;
+}
+
+.card span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #aeaeae;
+}
+
+.img-wrapper{
+    height:18vw;
+    margin:0 auto;
+}
+
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
