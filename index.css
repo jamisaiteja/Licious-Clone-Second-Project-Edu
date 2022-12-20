@@ -75,18 +75,17 @@ li a:hover{
 
 /* sub header */
 
-.sub-header, .menu{
+.sub-header{
     background-color: #fff;
 }
 
 .secondDiv{
-    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.secondDiv a,.menu a{
+.secondDiv a{
     color:#4a4a4a;
     text-decoration: none;
 }
@@ -96,8 +95,13 @@ li a:hover{
 }
 
 .location{
-    width: 120px;
+    width: 140px;
     border: none;
+    overflow: hidden;
+    font-size: 14px;
+    background-color: transparent;
+    text-align: left;
+    /* color:#4a4a4a; */
 }
 
 .loca{
@@ -119,10 +123,16 @@ li a:hover{
     margin-top: 14px;
 }
 
+#locatext{
+    background-color: transparent;
+    color:#363535;
+    opacity: 0.5;
+}
+
 .search-container{
     border: 1px solid #4a4a4a;
     border-radius:8px;
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     width:35%;
     margin:5px;
 }
@@ -154,12 +164,13 @@ li a:hover{
 }
 
 .title{
-    margin-left: 10px;
+    font-weight: 600;
 }
 
 .menu-image{
     width:22px;
     height: 22px;
+    margin-right: 10px;
 }
 
 .menu-bar ul {
@@ -176,8 +187,8 @@ li a:hover{
 
 .menu-bar ul li a {
     /* font-size: 20px; */
-    color: #4a4a4a;
-    text-decoration: none;
+    /* color: #4a4a4a;
+    text-decoration: none; */
     transition: all 0.3s;
 }
 
@@ -194,6 +205,7 @@ li a:hover{
   /* dropdown menu style */
 .dropdown-menu {
     display: none;
+    background-color: #d6cbcb;
 }
 
 .menu-bar ul li:hover .dropdown-menu {
@@ -201,7 +213,7 @@ li a:hover{
     position: absolute;
     left: 0;
     /* top: 100%; */
-    background-color: #d6cbcb;
+    
     /* opacity: .7; */
     border-radius: 8px;
 }
@@ -271,8 +283,6 @@ li a:hover{
         padding: 0 20px;
         transition: .3s;
     }
-
-    
 }
 
 .bulb-image {
@@ -280,11 +290,17 @@ li a:hover{
     height:40px;
 }
 
+.light-dark-mode{
+    margin: 14px 0;
+}
+
 /*main*/
 
 main{
+    background-color: #555353;
     background-color: #f7f6f6;
     padding:60px 0;
+    color:#4a4a4a;
 }
 
 main a{
@@ -295,7 +311,6 @@ main a{
     font-size:22px;
     line-height: 24px;
     font-weight: 600;
-    color:#4a4a4a;
 }
 
 .sub-title-text{
@@ -327,6 +342,7 @@ main a{
     font-size: 16px;
     line-height: 24px;
     color:#3e4d60;
+    /* color:#908f8f; */
 }
 
 
@@ -376,7 +392,7 @@ main a{
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
-    color: #727272;
+    color: #4a4a4a;
     margin-top: 1em;
     overflow: hidden;
 }
@@ -413,7 +429,7 @@ main a{
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
-    color: #aeaeae;
+    color: #4a4a4a;
 }
 
 .img-wrapper{
