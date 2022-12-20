@@ -113,6 +113,15 @@ function on(){
             x.style.color="#4a4a4a"
         })
         main.style.backgroundColor = "#f7f6f6";
-        main.style.color="#4a4a4a"
+        main.style.color="#4a4a4a";
+        category.forEach((x)=>{
+            x.style.backgroundColor = "#ffffff";
+        });
+
+        carousalCards.forEach((x)=>{
+            x.style.backgroundColor = "#ffffff";
+        });
+
+        footer.style.backgroundColor="#ffffff"
     }
 }
