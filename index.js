@@ -125,3 +125,13 @@ function on(){
         footer.style.backgroundColor="#ffffff"
     }
 }
+
+function loadCoupon(){
+    document.getElementsByClassName('coupon')[0].style.display = 'block';
+    document.getElementsByTagName('main')[0].style.opacity='0.7'
+}
+
+const closeCoupon = () => {
+    document.getElementsByClassName('coupon')[0].style.display = 'none';
+    document.getElementsByTagName('main')[0].style.opacity='1'
+}

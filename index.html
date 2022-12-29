@@ -352,6 +352,17 @@
             </div>
         </div>
     </header>
+    <div class="coupon-container">
+        <div class="coupon">
+            <button onClick="closeCoupon()" class="close-button">&times;</button>
+            <div>
+                <img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b7b6d14949" class="d-block w-100 coupon-image" alt="Today-Deals">
+            </div>
+            <div>
+                <img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_620b797c88952" class="d-block w-100 coupon-image one" alt="Today-Deals">
+            </div>
+        </div>
+    </div>
     <main>
         <div class="carsousal">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -1185,6 +1196,7 @@
             </div>
         </div>
     </main>
+    
     <footer>
         <div class="container pt-3">
             <div class="logo mb-3"> 
@@ -1506,6 +1518,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        window.onload = loadCoupon()
     </script>
 </body>
 </html>
