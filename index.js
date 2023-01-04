@@ -1,8 +1,11 @@
- /*Geo location */
+ /*Geo location and weather */
 var locaText = document.querySelectorAll("#locatext");
 var locaBtn = document.querySelectorAll("#locationbtn");
 var city = document.querySelectorAll("#city");
-console.log(locaText,locaBtn,city)
+let weather = {
+    apikey: "03184be214402eaeb0a875622dccd906"
+};
+ // console.log(locaText,locaBtn,city);
 function showCities(){
     if(navigator.geolocation){
         locaBtn.forEach((x)=>{
@@ -17,24 +20,36 @@ function showCities(){
 }
 
 
-
 function onSuccess(position){
     locaBtn.forEach((x)=>{
         x.textContent = "Detecting location..."
     })
     let {latitude, longitude} = position.coords;
     let apikey = '132c358937004b65b7b14abfcc8f8f4e';
-    // sending get request to the api with passing lat and long coordinates to the user position
+    let weatherapikey = "8688eee7e6c96843a290a39aae1d348c";
+     // sending get request to the api with passing lat and long coordinates to the user position
     fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apikey}`)
-    //parsing json data into javascript object wuth returning iy and in another then function receiving the object that is sent by the api
+     //parsing json data into javascript object wuth returning iy and in another then function receiving the object that is sent by the api
     .then(response => response.json()).then(result => {
-        let allDetails = result.results[0].components; //passing components obj to allDetails variable
-        let {country,county,postcode,state,state_district} = allDetails; //getting properties from allDetails
-        city.forEach((x)=>{
-            x.textContent=`${county}`;
-        })
+         let allDetails = result.results[0].components; //passing components obj to allDetails variable
+        console.log(allDetails);
+         let {country,county,postcode,state,state_district} = allDetails; //getting properties from allDetails
         locaBtn.forEach((x)=>{
             x.textContent=`${county},${country},${postcode}`;
+        })
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherapikey}&units=metric`)
+        .then(response=>response.json()).then(result=>{
+            console.log(result)
+            let {name} =result;
+            let {description} = result.weather[0];
+            let {temp} =result.main;
+            city.forEach((x)=>{
+                x.textContent= name + ', ' + temp + '\u00B0' + 'C'  + ', ' + description;
+            })
+        }).catch(()=>{
+            locaText.forEach((x)=>{
+                x.textContent = "Something went wrong"
+            })
         })
 
     }).catch(()=>{
@@ -49,16 +64,16 @@ function onError(error){
         locaText.forEach((x)=>{
             x.textContent = "You denied the request"
         })
-    }else if(error.code === 2){ // if location is not available
+     }else if(error.code === 2){ // if location is not available
         locaText.forEach((x)=>{
             x.textContent = "Location not available"
         })
-    }else{ // if any other error occured
+     }else{ // if any other error occured
         locaText.forEach((x)=>{
             x.textContent = "Something went wrong"
         })
     }
-    locaBtn.setAttribute("disabled","true") // is user denied the request then button will be disabled
+     locaBtn.setAttribute("disabled","true") // is user denied the request then button will be disabled
 }
 
 
@@ -135,3 +150,5 @@ const closeCoupon = () => {
     document.getElementsByClassName('coupon')[0].style.display = 'none';
     document.getElementsByTagName('main')[0].style.opacity='1'
 }
+
+

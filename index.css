@@ -108,12 +108,14 @@ li a:hover{
     width: 25px;
     height: 25px;
     margin-top:14px;
+    margin-left: 10px;
 }
 
 .loctext{
-    width: 150px;
+    width: 180px;
     height: 70px;
-    margin: auto;
+    overflow: hidden;
+    /* margin: 0 5px; */
 }
 .loctext>p{
     font-size: 12px;
@@ -121,6 +123,10 @@ li a:hover{
     margin: auto;
     margin-left: 4px;
     margin-top: 14px;
+}
+
+#city{
+    width: 180px;
 }
 
 #locatext{
