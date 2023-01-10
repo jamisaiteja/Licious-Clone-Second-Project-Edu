@@ -7,9 +7,12 @@ a:hover{
     text-decoration: none;
 }
 
-header{
-    z-index: 1000;
-}
+/* .header{
+    position: fixed;
+    top:0px;
+    z-index:2;
+    margin:auto;
+} */
 
 /* top nav */
 .top-nav{
@@ -18,9 +21,9 @@ header{
     border:1px solid #eaeaea;
 }
 
-.header{
-    position:fixed;
-}
+/* header{
+    margin:0 0 5px 0;
+} */
 
 li{
     list-style-type: none;
@@ -90,7 +93,7 @@ li a:hover{
     text-decoration: none;
 }
 
-.location-container{
+.locationContainer{
     display: flex;
 }
 
@@ -111,13 +114,13 @@ li a:hover{
     margin-left: 10px;
 }
 
-.loctext{
+.locText{
     width: 180px;
     height: 70px;
     overflow: hidden;
     /* margin: 0 5px; */
 }
-.loctext>p{
+.locText>p{
     font-size: 12px;
     font-weight: bolder;
     margin: auto;
@@ -129,7 +132,7 @@ li a:hover{
     width: 180px;
 }
 
-#locatext{
+#locaText{
     background-color: transparent;
     color:#363535;
     opacity: 0.5;
@@ -305,9 +308,9 @@ li a:hover{
 /*main*/
 
 main{
-    background-color: #555353;
+    /* background-color: #555353; */
     background-color: #f7f6f6;
-    padding:60px 0;
+    padding-top:4em;
     color:#4a4a4a;
 }
 
@@ -449,9 +452,16 @@ main a{
     max-height: 100%;
 }
 
+.Home_big_bottom_img_div__kf6K1 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 ;
+    object-fit: fill;
+    width: 100%;
+}
 /*coupon*/
 
-.coupon-container{
+.couponContainer{
     position:relative
 }
 .coupon{
@@ -464,12 +474,12 @@ main a{
     z-index: 100;
     display:none;
 }
-.coupon-image{
+.couponImage{
     height: 200px;
     width:100%;
 }
 
-.close-button{
+.closeButton{
     cursor: pointer;
     background: transparent;
     position: absolute;

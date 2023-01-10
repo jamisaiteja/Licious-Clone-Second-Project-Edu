@@ -1,6 +1,6 @@
  /*Geo location and weather */
-var locaText = document.querySelectorAll("#locatext");
-var locaBtn = document.querySelectorAll("#locationbtn");
+var locaText = document.querySelectorAll("#locaText");
+var locaBtn = document.querySelectorAll("#locationBtn");
 var city = document.querySelectorAll("#city");
 let weather = {
     apikey: "03184be214402eaeb0a875622dccd906"

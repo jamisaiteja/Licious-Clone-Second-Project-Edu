@@ -1,0 +1,54 @@
+[
+    {
+        "id":1,
+        "category":"Today deals"
+    },
+    {
+        "id":2,
+        "category":"Chicken"
+    },
+    {
+        "id":3,
+        "category":"Fish & Seafood"
+    },
+    {
+        "id":4,
+        "category":"Mutton"
+    },
+    {
+        "id":5,
+        "category":"Ready to cook"
+    },
+    {
+        "id":6,
+        "category":"Prawns"
+    },
+    {
+        "id":7,
+        "category":"Cold cuts"
+    },
+    {
+        "id":8,
+        "category":"Spreads"
+    },
+    {
+        "id":9,
+        "category":"Eggs"
+    },
+    {
+        "id":10,
+        "category":"Biryani & kebab"
+    },
+    {
+        "id":11,
+        "category":"Combos"
+    },
+    {
+        "id":12,
+        "category":"Gourmet"
+    },
+    {
+        "id":13,
+        "category":"Best Sellers"
+    }
+]

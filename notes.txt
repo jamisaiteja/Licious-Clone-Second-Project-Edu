@@ -1,0 +1,4 @@
+//npm i cors
+
+cors error in react - cross origin error - which occurs when frontend and backend works on different ports (like 3000 in frontend and 
+backend in 9310) and it will be resolved through backend only.
