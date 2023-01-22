@@ -1,11 +1,33 @@
 //npm i cors
-
+port no: 3000 - frontend
+port no: 9200 - backend
 cors error in react - cross origin error - which occurs when frontend and backend works on different ports (like 3000 in frontend and 
-backend in 9310) and it will be resolved through backend only.
+backend in 9310) and This issue will be resolved through backend only i.e., cors.
 
 
 //global package  which will be installed in PC
 
-
 nodemon - global
 command : npm i -g nodemon (cmd as administrator)
+
+
+pages in website
+
+search page
+listing page
+details page
+place order page
+view order page
+
+Params - 
+    - what you pass after / 
+    - It is compulsory to define in route
+    - if define in route than we need to pass
+    - should use for passing 1 or 2 values only
+    
+Queryparams 
+    - what you pass after ?
+    - No need to define
+    - Optional to pass
+    - Can use to pass multiple values
+body-
