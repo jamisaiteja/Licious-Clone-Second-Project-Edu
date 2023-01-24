@@ -114,3 +114,8 @@ mongodb+srv://test:test123@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majori
 > db.restaurants.find({"mealTypes.mealtype_id":1},{restaurant_name:1,average_rating:1,cost:1}).pretty()
 
 database live link: mongodb+srv://jami:Venkatsai@cluster0.aiz67sc.mongodb.net/?retryWrites=true&w=majority
+
+C > create (POST)
+R > Read (GET)
+U > Update (PUT)
+D > Delete (DELETE)
