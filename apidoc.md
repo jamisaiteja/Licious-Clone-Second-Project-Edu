@@ -62,9 +62,9 @@
 * http://localhost:9310/orders?email=sai@gmail.com
 * https://nodetestapilicious.onrender.com/orders?email=sai@gmail.com
 
->Update payment details -not working (PUT)
-* http://localhost:9310/updateOrder/5
-* https://nodetestapilicious.onrender.com/updateOrder/5
+>Update payment details -not working 
+* http://localhost:9310/updateOrder/5 (PUT)
+* https://nodetestapilicious.onrender.com/updateOrder/5 (PUT)
 
 >Delete orders (DELETE)
 * http://localhost:9310/deleteOrder/63cf888492db6febb2069463
