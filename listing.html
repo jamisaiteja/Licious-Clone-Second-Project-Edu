@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <title>Order Meat Online - Buy Fresh & High Quality Meat at Best Prices only on Licious</title>
+    <link href="https://i.ibb.co/XbmjWbN/android-chrome-192x192.png" rel="icon"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- aos library link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="fixed-top" id="header">
+        <div class="sub-header" id="subHeader-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 d-none d-md-block">
+                        <div class="container">
+                            <div class="secondDiv">
+                                <!-- licious logo -->
+                                <div class="logo"> 
+                                    <a href="/index.html"><img class="LiciousLogo" src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="Licious"></a>
+                                </div>
+            
+                                <!-- location section -->
+                                <div class="locationContainer">
+                                    <div class="loca">
+                                        <img src="https://www.licious.in/img/default/location_icon.svg" alt="location_img">
+                                    </div>
+            
+                                    <!-- cities we serve -->
+                                    <div class="locText"> 
+                                        <p id="city">Select City</p>
+                                        <!-- <select name="" class="location" onclick="showCities()">
+                                            <option value=""disabled selected hidden>Enter City</option>
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="NCR ">NCR </option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Mohali">Mohali</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Pune">Pune</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Coimbatore">Coimbatore</option>
+                                            <option value="Jaipur">Jaipur</option>
+                                            <option value="Cochin">Cochin</option>
+                                            <option value="Vijayawada">Vijayawada</option>
+                                            <option value="visakhapatnam">visakhapatnam</option>
+                                            <option value="pondicherry">pondicherry</option>
+                                            <option value="Trichy">Trichy</option>
+                                        </select> -->
+                                        <button id="locationBtn" class="location title" onclick="showCities()">Enter City</button>
+                                        <p id="locaText"></p>
+                                    </div>
+
+                                    <!-- <div class="loctext"> 
+                                        <p id="city">Select City</p>
+                                        <button id="locationbtn" class="location title" onclick="showCities()">Enter City</button>
+                                        <p id="locatext"></p>
+                                    </div> -->
+                                </div>
+            
+                                <!-- searchbar section -->
+                                <div class="search-container">
+                                        <div id="search" class="search">
+                                                <div class="search-content">
+                                                    <span><a href="./index.css" class="placeholder"></a>Search for any delicious product</span>
+                                                    <a href=""><img src="https://www.licious.in/img/default/search_icon.svg" alt=""></a>
+                                                </div>
+                                                <!-- <a href=""></a> -->
+                                        </div>
+                                        <!-- <input type="text" id="search" onkeyup="search()" placeholder="Search for any delicious product"> -->
+                                        <!-- <button type="submit" class="searchButton"> -->
+                                        <!-- </button> -->
+                                </div>
+            
+            
+                                <div class="menu-bar mt-3">
+                                    <ul>
+                                        <li>
+                                            <a href="" class="link"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="category-image" class="menu-image"><a href="" class="title">Categories</a></a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/rb0wrKH/Chicken-2-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Chicken</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Curry Cuts</a></li>
+                                                                <li><a href="#">Boneless &amp; Mince</a></li>
+                                                                <li><a href="#">Speciality Cuts</a></li>
+                                                                <li><a href="#">Offals</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                                <li><a href="#">Ready to Cook</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/TY77Wy9/FIsh-1-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Fish &amp; Seafood</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Fresh Water</a></li>
+                                                                <li><a href="#">Sea Water</a></li>
+                                                                <li><a href="#">Ready to Cook</a></li>
+                                                                <li><a href="#">Crab</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/DfvrCdj/MUT-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Mutton</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Curry Cuts</a></li>
+                                                                <li><a href="#">Boneless &amp; Mince</a></li>
+                                                                <li><a href="#">Speciality Cuts</a></li>
+                                                                <li><a href="#">Offals</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                                <li><a href="#">Ready to Cook</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/3Yj7TRR/RC-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Ready to cook</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Gourmet Marinades</a></li>
+                                                                <li><a href="#">Kebabs &amp; Tandoor</a></li>
+                                                                <li><a href="#">Wings</a></li>
+                                                                <li><a href="#">Crispy Snacks</a></li>
+                                                                <li><a href="#">Burger Patties</a></li>
+                                                                <li><a href="#">Biryani</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/jGWQSqn/Prawn-2-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Prawns</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Small Size</a></li>
+                                                                <li><a href="#">Medium Size</a></li>
+                                                                <li><a href="#">Large Size</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                                <li><a href="#">Ready to Cook</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/1RW5kLD/Coldcuts-2-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Cold Cuts</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Sausages</a></li>
+                                                                <li><a href="#">Frankfurters</a></li>
+                                                                <li><a href="#">Lyoners</a></li>
+                                                                <li><a href="#">Salamis</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/P9ZRXJ3/SPD-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Spreads</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Chicken</a></li>
+                                                                <li><a href="#">Prawn</a></li>
+                                                                <li><a href="#">Egg</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/fC3fVSh/Eggs-1-removebg-preview.png" alt="User">
+                                                            <span class="category-dropdown-title">Eggs</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">CLassic Eggs</a></li>
+                                                                <li><a href="#">Speciality Eggs</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                                <li><a href="#">Spreads</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="categories-dropdown-img" src="https://i.ibb.co/0MnYBkQ/Biryani-2-removebg-preview.png" alt="Biryani &amp; Kebab">
+                                                            <span class="category-dropdown-title">Biryani &amp; Kebab</span>
+                                                        </a>
+                                                        <div class="dropdown-menu-1">
+                                                            <ul>
+                                                                <li><a href="#">Biryani</a></li>
+                                                                <li><a href="#">Kebab</a></li>
+                                                                <li><a href="#">Tandoor</a></li>
+                                                                <li><a href="#">Combos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link"><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="login-image" class="menu-image"><a href="" class="title">Login</a></a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link"><img src="https://m.licious.in/image/rebranding/png/Cart_v2.png" alt="addToCart" class="menu-image"><a href="" class="title">Cart</a></a>
+                                        </li>
+                                    </ul>
+                                </div>
+            
+            
+                                <!-- <div class="light-dark-mode">
+                                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/9GWjMtS/lighton-removebg-preview.png" alt="lighton-removebg-preview" id="light" class="bulb-image"></a>
+                                    <a href="#" onclick="on()"><img src="https://i.ibb.co/2tzw6HC/lightoff-removebg-preview.png" alt="lightoff-removebg-preview"  id="light" class="bulb-image"></a>
+                                </div> -->
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-11 d-block d-md-none">
+                        <div class="container">
+                            <div class="locationContainer">
+                                <div class="loca">
+                                    <img src="https://www.licious.in/img/default/location_icon.svg" alt="location_img">
+                                </div>
+            
+                                <!-- cities we serve -->
+                                <div class="locText"> 
+                                        <p id="city">Select City</p>
+                                        <button id="locationBtn" class="location title" onclick="showCities()">Enter City</button>
+                                        <p id="locaText"></p>
+                                </div>
+
+                                <!-- <div class="loctext"> 
+                                    <p id="city">Select City</p>="Trichy">Trichy</option>
+                                    <button id="locationbtn" class="location title" onclick="showCities()">Enter City</button>
+                                    <p id="locatext"></p>
+                                </div> -->
+            
+                                
+                            </div>
+                            <div class="row secondDiv sub-header fixed-bottom text-center">
+                                <div class="col-3">
+                                    <a href="">
+                                        <div><img src="https://i.ibb.co/rtTnRFr/ezgif-2-1ca9dc9ab2.png" alt=""></div>
+                                        <div class="title">Home</div>
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="">
+                                        <div><img src="https://i.ibb.co/q7gY4k4/ezgif-2-2155281dac.png" alt=""></div>
+                                        <div class="title">Categories</div>
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="">
+                                        <div><img src="https://i.ibb.co/dDMPLbL/ezgif-2-6eec814230.png" alt=""></div>
+                                        <div class="title">Search</div>
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="">
+                                        <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt=""></div>
+                                        <div class="title">Account</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 light-dark-mode p-1">
+                        <!-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/9GWjMtS/lighton-removebg-preview.png" alt="lighton-removebg-preview" id="light" class="bulb-image"></a> -->
+                        <a href="#" onclick="on()"><img src="https://i.ibb.co/2tzw6HC/lightoff-removebg-preview.png" alt="lightoff-removebg-preview"  id="light" class="bulb-image"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="categoryHeading">
+                    <h1>Today's Deals</h1>
+                </div>
+                <hr/>
+                <div class="subCategories">
+                    <div class="sc1">
+                        <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/e8259b77-ca4c-8829-31e8-810c69b19678/original/Todays_Deal_1.png" class="subCat_img">
+                        <span class="sc_name">All</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container pt-3">
+            <div class="logo mb-3"> 
+                <a href="/index.html"><img class="LiciousLogo" src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="Licious"></a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 links">
+                                <ul>
+                                    <li class="heading">
+                                        <span>USEFUL LINKS</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Why Licious?
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Refer &amp; Earn
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Licious Cash &amp; Cash+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Careers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            BLOG
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Campaign
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Bug Bounty Guidelines
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            FSSC 22000 Certification
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            FSSAI Licenses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SA8000 Certification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sitemap</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li class="heading text-uppercase">
+                                        Experience Licious App on Mobile
+                                    </li>
+                                    <li class="download mt-2">
+                                        <a href="https://itunes.apple.com/in/app/buy-meat-online-licious/id1052440342?mt=8" target="_blank">
+                                            <img alt="App store" src="https://www.licious.in/img/rebranding/app-store-new.svg">
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.licious" target="_blank">
+                                            <img alt="Play store" src="https://www.licious.in/img/rebranding/play-store-new.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 links contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="contact-list mb-2">
+                                    <li class="heading mb-2">
+                                        CONTACT US
+                                    </li>
+                                    <li>
+                                        Call: 1800-4190-786
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Talktous@licious.com
+                                        </a>
+                                    </li>
+                                    <li class="heading addr mb-2 mt-2">
+                                        REGISTERED OFFICE ADDRESS:
+                                    </li>
+                                    <li>
+                                        House of Licious, Zed Pearl, No 12, Domlur Layout
+                                    </li>
+                                    <li>
+                                        Bangalore, Karnataka - 560071
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="essential-list">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            T&amp;C
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li class="heading addr mt-3 mb-3">
+                                        HAVE SECURITY CONCERN?
+                                    </li>
+                                    <li>
+                                        Mail us to: security@licious.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-around">
+                <div class="keep-in-touch">
+                    <span class="keep-text">keep in touch</span>
+                    <a href="https://www.instagram.com/licious_foods/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/LiciousFoods/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/LiciousFoods" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div>
+                    <ul class="verified-pay">
+                        <li class="veri">
+                            <img alt="visa-mastercard-img" src="https://www.licious.in/img/rebranding/3-dsecure.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="cites-serving m-4">
+                <div class="city-heading-container d-flex">
+                    <p class="city-header">CITIES WE SERVE</p>
+                </div>
+                <div class="city-list-container">
+                    <a class="city_name" id="Bengaluru" href="#">
+                        Bengaluru
+                    </a>
+                    <a class="city_name" id="NCR" href="#">
+                        NCR
+                    </a>
+                    <a class="city_name" id="Hyderabad" href="#">
+                        Hyderabad
+                    </a>
+                    <a class="city_name" id="Chandigarh" href="#">
+                        Chandigarh
+                    </a>
+                    <a class="city_name" id="Panchkula" href="#">
+                        Panchkula
+                    </a>
+                    <a class="city_name" id="Mohali" href="#">
+                        Mohali
+                    </a>
+                    <a class="city_name" id="Mumbai" href="#">
+                        Mumbai
+                    </a>
+                    <a class="city_name" id="Pune" href="#">
+                        Pune
+                    </a>
+                    <a class="city_name" id="Chennai" href="#">
+                        Chennai
+                    </a>
+                    <a class="city_name" id="Coimbatore" href="#">
+                        Coimbatore
+                    </a>
+                    <a class="city_name" id="Jaipur" href="#">
+                        Jaipur
+                    </a>
+                    <a class="city_name" id="Cochin" href="#">
+                        Cochin
+                    </a>
+                    <a class="city_name" id="Vijayawada" href="#">
+                        Vijayawada
+                    </a>
+                    <a class="city_name" id="Visakhapatnam" href="#">
+                        Visakhapatnam
+                    </a>
+                    <a class="city_name" id="Kolkata" href="#">
+                        Kolkata
+                    </a>
+                    <a class="city_name" id="Lucknow" href="#">
+                        Lucknow
+                    </a>
+                    <a class="city_name" id="Kanpur" href="#">
+                        Kanpur
+                    </a>
+                    <a class="city_name" id="Nagpur" href="#">
+                        Nagpur
+                    </a>
+                </div>
+            </div>
+
+            <div class="popular-searches">
+                <div class="city-heading-container text-uppercase">
+                    <p class="city-header">Popular Searches</p>
+                </div>
+                <div class="list-items">
+                    <ul>
+                        <li class="heading">
+                            <a href="#">Chicken</a>
+                        </li>
+                        <li class="footer-popular-search-items">
+                            <a href="#" class="list-item-chicken">Chicken Breast Boneless</a>
+                            <a href="#">Chicken Thigh (Boneless)</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="heading">
+                            <a href="#">Mutton</a>
+                        </li>
+                        <li class="footer-popular-search-items">
+                            <a href="#">Lamb Mince</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="heading">
+                            <a href="#">Fish &amp; Seafood</a>
+                        </li>
+                        <li class="footer-popular-search-items">
+                            <a href="#">Anchovy Small (Whole - Cleaned &amp; Gutted)</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="heading">
+                            <a href="#">Cold Cuts</a>
+                        </li>
+                        <li class="footer-popular-search-items">
+                            <a href="#">Chicken Breakfast Sausage with Chives</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="heading">
+                            <a href="#">Ready to Cook</a>
+                        </li>
+                        <li class="footer-popular-search-items">
+                            <a href="#">Spicy Chicken Pakoda (Deep Fry)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="faqs" style="display: none;">
+                <h4>We will sell only the meat that we would eat ourselves.</h4>
+                <p>
+                    At Licious, we’re big meat-lovers. And by big, we mean huge. So when it comes to the meat we
+                    put on your plate, we’re extremely picky. Every single product is handpicked by a team with years of experience.
+                </p>
+                <h4>If it’s not fresh, we won’t sell it.</h4>
+                <p>
+                    For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0° and 5°. We maintain this temperature from the time we procure the product to cleaning, cutting and storing it, until it leaves for delivery. And even when it’s out for delivery, we keep it chilled right up to your doorstep.
+                    Did we mention that we’re obsessed?
+                </p>
+                <h4>We will charge only for what you buy.</h4>
+                <p>
+                    Doesn’t everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren’t fit to eat, such as offal, gizzard, wingtips, etc.
+                    But you still pay based on the original weight even though what you finally get is 10% to 30% less
+                </p>
+            </div>
+    
+            <div class="disclaimer text-center">
+                <h5>
+                    <i class="fa-regular fa-copyright"></i><span class="year">2022</span>
+                    <span>Delightful Gourmet Pvt Ltd. All Rights Reserved.</span> 
+                </h5>
+                <p>
+                    Licious is your one-stop fresh meat delivery shop. In here, you get nothing but
+                    the freshest meat &amp; seafood, delivered straight to your doorstep. Now you can buy
+                    meat online anytime at your convenience. Indulge in our diverse selection: Chicken,
+                    Mutton, Seafood (Fish, Prawns, Crabs), Marinades &amp; Cold Cuts. All our products are 
+                    completely natural and healthy. Once you've experienced Licious, you'll never
+                    go back to the old way of buying meat and seafood.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- aos data -->
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

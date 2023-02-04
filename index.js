@@ -1,4 +1,22 @@
- /*Geo location and weather */
+
+const nav = document.querySelector("#header");
+
+const onScroll = (event) => {
+    const scrollPosition = event.target.scrollingElement.scrollTop;
+    if (scrollPosition > 10) {
+        if (!nav.classList.contains("scrolled-down")) {
+        nav.classList.add("scrolled-down");
+        }
+    } else {
+        if (nav.classList.contains("scrolled-down")) {
+        nav.classList.remove("scrolled-down");
+        }
+    }
+};
+
+document.addEventListener("scroll", onScroll);
+
+/*Geo location and weather */
 var locaText = document.querySelectorAll("#locaText");
 var locaBtn = document.querySelectorAll("#locationBtn");
 var city = document.querySelectorAll("#city");

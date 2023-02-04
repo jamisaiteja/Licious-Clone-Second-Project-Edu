@@ -608,3 +608,23 @@ main a{
     color:#4a4a4a;
 }
 
+/*listing page*/
+.categoryHeading h1{
+    font-size: 24px;
+    font-family: Lato!important;
+    font-weight: 700!important;
+    display: inline-block;
+    vertical-align: middle;
+    color: #585858;
+    padding-left: 11px;
+    margin: 0 25px 16px 0;
+}
+
+
+.subCat_img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 8px;
+    border-radius: 50%;
+}
