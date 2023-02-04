@@ -1,6 +1,6 @@
 [
     {
-        "orderId": "1",
+        "orderId": 1,
         "name": "Aakash",
         "email": "aakash@gmail.com",
         "address": "Hno 23,Sector 1",
@@ -14,7 +14,7 @@
         "status": "Pending"
     },
     {
-        "orderId": "2",
+        "orderId": 2,
         "name": "Anchal",
         "email": "anchal@gmail.com",
         "address": "Hno 23,Sector 1",
@@ -28,7 +28,7 @@
         "status": "Pending"
     },
     {
-        "orderId": "3",
+        "orderId": 3,
         "name": "Anchal",
         "email": "anchal@gmail.com",
         "address": "Hno 23,Sector 1",
@@ -42,7 +42,7 @@
         "status": "Pending"
     },
     {
-        "orderId": "4",
+        "orderId": 4,
         "name": "Aakash",
         "email": "aakash@gmail.com",
         "address": "Hno 23,Sector 1",
