@@ -32,7 +32,18 @@ State
 > Act like a local variable
 > Each component can have its own state
 > We can update the value of the state.
-
+> Any data interaction will happen through state
 Props
 > Use for transferring the data between nested component.
 > We cannot update the value of props
+
+parent > child(props)
+child > parent(props with callback)
+
+
+/// default props Only in routing 5
+> History(redirection)
+> Location(queryParams)
+> Match (params)
+
+
