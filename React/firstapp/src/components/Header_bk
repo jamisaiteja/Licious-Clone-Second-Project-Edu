@@ -1,0 +1,48 @@
+import React, {Component} from 'react';
+
+class Header extends Component {
+    render(){
+        // style Object
+        const myStyle = {
+            header:{
+                backgroundColor:'tomato',
+                textAlign:'center',
+            },
+
+            logo:{
+                fontSize:'30px',
+                color:'white',
+                textAlign:'center'
+            }
+        }
+        return(
+            <>
+                <header style={myStyle.header}>
+                    <div style={myStyle.logo}>React App</div>
+                    <input/>
+                    {/* inline style */}
+                    <div style={{color:'red',fontSize:"20px"}}>User Text Here</div>
+                </header>
+                <hr/>
+            </>
+        )
+    }
+}
+
+export default Header;
+
+
+// import React from 'react';
+
+// const Header = () =>{
+//     return(
+//         <>
+//             <center>
+//                 <h1>React App</h1>
+//             </center>
+//             <hr/>
+//         </>
+//     )
+// }
+
+// export default Header;
