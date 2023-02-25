@@ -1,50 +1,259 @@
 [
     {
         "id":1,
-        "category":"Today deals"
+        "category":"Today deals",
+        "category_img":"https://i.ibb.co/CMp9Hf9/Todays-Deals-removebg-preview.png",
+        "subcategories":""
     },
     {
         "id":2,
-        "category":"Chicken"
+        "category":"Chicken",
+        "category_img":"https://i.ibb.co/rb0wrKH/Chicken-2-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Curry Cuts"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Boneless &amp; Mince"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Speciality Cuts"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Offals"
+            },
+            {
+                "subCategory_id": 5,
+                "subCategory_name": "Combos"
+            },
+            {
+                "subCategory_id": 6,
+                "subCategory_name": "Ready to Cook"
+            }
+        ]
     },
     {
         "id":3,
-        "category":"Fish & Seafood"
+        "category":"Fish & Seafood",
+        "category_img":"https://i.ibb.co/TY77Wy9/FIsh-1-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Fresh Water"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Sea Water"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Ready to Cook"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Crab"
+            }
+        ]
     },
     {
         "id":4,
-        "category":"Mutton"
+        "category":"Mutton",
+        "category_img":"https://i.ibb.co/DfvrCdj/MUT-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Curry Cuts"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Boneless &amp; Mince"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Speciality Cuts"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Offals"
+            },
+            {
+                "subCategory_id": 5,
+                "subCategory_name": "Combos"
+            },
+            {
+                "subCategory_id": 6,
+                "subCategory_name": "Ready to Cook"
+            }
+        ]
     },
     {
         "id":5,
-        "category":"Ready to cook"
+        "category":"Ready to cook",
+        "category_img":"https://i.ibb.co/3Yj7TRR/RC-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Gourmet Marinades"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Kebabs &amp; Tandoor"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Wings"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Crispy Snacks"
+            },
+            {
+                "subCategory_id": 5,
+                "subCategory_name": "Burger Patties"
+            },
+            {
+                "subCategory_id": 6,
+                "subCategory_name": "Biriyani"
+            },
+            {
+                "subCategory_id": 7,
+                "subCategory_name": "Combos"
+            }
+        ]
     },
     {
         "id":6,
-        "category":"Prawns"
+        "category":"Prawns",
+        "category_img":"https://i.ibb.co/jGWQSqn/Prawn-2-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Small Size"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Medium Size"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Large Size"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Combos"
+            },
+            {
+                "subCategory_id": 5,
+                "subCategory_name": "Ready to Cook"
+            }
+        ]
     },
     {
         "id":7,
-        "category":"Cold cuts"
+        "category":"Cold cuts",
+        "category_img":"https://i.ibb.co/1RW5kLD/Coldcuts-2-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Sausages"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Frankfurters"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Lyoners"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Salamis"
+            }
+        ]
     },
     {
         "id":8,
-        "category":"Spreads"
+        "category":"Spreads",
+        "category_img":"https://i.ibb.co/P9ZRXJ3/SPD-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Chicken"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Prawn"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Egg"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Combos"
+            }
+        ]
     },
     {
         "id":9,
-        "category":"Eggs"
+        "category":"Eggs",
+        "category_img":"https://i.ibb.co/fC3fVSh/Eggs-1-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Classic Eggs"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Speciality Eggs"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Combos"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Spreads"
+            }
+        ]
     },
     {
         "id":10,
-        "category":"Biryani & kebab"
+        "category":"Biryani & kebab",
+        "category_img":"https://i.ibb.co/0MnYBkQ/Biryani-2-removebg-preview.png",
+        "subcategories":[
+            {
+                "subCategory_id": 1,
+                "subCategory_name": "Biryani"
+            },
+            {
+                "subCategory_id": 2,
+                "subCategory_name": "Kebab"
+            },
+            {
+                "subCategory_id": 3,
+                "subCategory_name": "Tandoor"
+            },
+            {
+                "subCategory_id": 4,
+                "subCategory_name": "Combos"
+            }
+        ]
     },
     {
         "id":11,
-        "category":"Plant Based Meat"
+        "category":"Plant Based Meat",
+        "category_img":"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/66e49926-d949-dfb3-2e79-8052d07f0a3b/original/PBM_6_(8).png",
+        "subcategories":""
     },
     {
         "id":12,
-        "category":"Meat Masala"
+        "category":"Meat Masala",
+        "category_img":"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/3f37d093-81cf-3c66-115a-2a4575420d68/original/Masala_1200x840_web.png",
+        "subcategories":""
     }
 ]

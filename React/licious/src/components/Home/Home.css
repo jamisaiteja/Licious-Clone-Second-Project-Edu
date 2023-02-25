@@ -1,0 +1,271 @@
+main{
+    /* background-color: #555353; */
+    background-color: #f7f6f6;
+    padding-top:4em;
+    color:#4a4a4a;
+}
+
+main a{
+    text-decoration: none;
+}
+
+.category-heading{
+    font-size:22px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.sub-title-text{
+    font-size:14px;
+    line-height: 17px;
+    font-weight: 400;
+    color:#959799;
+}
+
+.category-image {
+    border-radius: 16px;
+}
+
+.category-image:hover{
+    padding: 5px;
+    transition: .3s all ease-in-out;
+}
+
+.category-section {
+    border-radius: 16px;
+    background-color: #fff;
+}
+.category{
+    text-align: center;
+}
+.category-name{
+    font-family: 'Lato';
+    font-weight:700;
+    font-size: 16px;
+    line-height: 24px;
+    color:#3e4d60;
+    /* color:#908f8f; */
+}
+
+
+/* @media screen and (min-width:768px){ */
+    /* .cards-wrapper{
+        display:flex;
+    } */
+/* } */
+
+
+.carousel-control-prev ,.carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding:8px;
+}
+
+.card{
+    border-radius: 0 0 16px 16px;
+    margin:0 .5em 1em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+/* .card img{
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+/* .chunky-img{
+    width: 368px;
+    height:230px;
+} */
+
+.card-title{
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #4a4a4a;
+}
+
+.card-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #4a4a4a;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+.weight{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #4a4a4a;
+}
+
+.MRP{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #d11243;
+}
+
+.addToCartBtn{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #d11243;
+    height: 36px;
+    width: 100px;
+}
+
+.card span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #4a4a4a;
+}
+/* 
+.img-wrapper{
+    height:18vw;
+    margin:0 auto;
+} */
+
+.img-fluid{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Home_big_bottom_img_div__kf6K1 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 ;
+    object-fit: fill;
+    width: 100%;
+}
+/*coupon*/
+
+.couponContainer{
+    position:relative
+}
+.coupon{
+    height:400px;
+    width:500px;
+    background-color:rgb(250, 250, 250);
+    position:absolute;
+    margin-top:14%;
+    /* margin-left:34%; */
+    z-index: 100;
+    display:none;
+}
+.couponImage{
+    height: 200px;
+    width:100%;
+}
+
+.closeButton{
+    cursor: pointer;
+    background: transparent;
+    position: absolute;
+    top:0px;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    color:#000;
+    border:1px solid #000;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .coupon-container{
+        position:relative
+    }
+    .coupon{
+        height:100px;
+        width:300px;
+        background-color:rgb(252, 252, 252);
+        position:absolute;
+        margin-top:24%;
+        /* margin-left:24%; */
+        z-index: 100;
+        display:none;
+    }
+    .coupon-image{
+        height: 120px;
+        width:100%;
+    }
+
+    .close-button{
+        font-size: 0.7em;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+
+/* carousel */
+
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+}
+
+.product-container {
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.pre-btn,
+.next-btn {
+    border: none;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.next-btn {
+    right: 0;
+}
+
+.next-btn p,
+.pre-btn p {
+    font-size: 30px;
+    background-color: rgba(242, 241, 241, 0.738);
+    /* box-shadow: 0px 0px 10px 1px black; */
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.bcard {
+    min-width: 400px;
+    max-width: 400px;
+    border-radius: 0 0 16px 16px;
+    margin:0 .6em 1em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    /* height: 400px; */
+    background-color: white;
+    /* margin: 10px; */
+    /* color: white; */
+}
+
+.bcard-body{
+    padding: 10px;
+}

@@ -1,0 +1,120 @@
+.city-heading-container{
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 700;
+    color:#4a4a4a;
+}
+
+.city-list-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.city_name{
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.city_name:hover, .keep-in-touch a:hover{
+    color:#d11243;
+}
+
+.city_name::after, .list-item-chicken::after{
+    content:"|";
+    margin: 15px;
+}
+
+.keep-in-touch span{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color:#4a4a4a;
+    text-transform: uppercase;
+}
+
+.keep-in-touch a{
+    color:#4a4a4a;
+    padding:5px;
+    text-decoration:none;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+.links ul li a{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    color:#4a4a4a;
+}
+
+.heading{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.download a img{
+    width:100px;
+    height:30px;
+    margin:5px;
+}
+
+.veri img{
+    width:150px;
+    height:30px;
+}
+
+.disclaimer h5 i,.disclaimer h5 span{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    color:#4a4a4a;
+    margin:5px;
+}
+
+.year,.footer-popular-search-items{
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color:#4a4a4a;
+}
+
+.disclaimer p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color:#4a4a4a;
+}
+
+
+/*listing page*/
+.categoryHeading h1{
+    font-size: 24px;
+    font-family: Lato!important;
+    font-weight: 700!important;
+    display: inline-block;
+    vertical-align: middle;
+    color: #585858;
+    padding-left: 11px;
+    margin: 10px 25px 16px 0;
+}
+
+.subCategories{
+    margin: 10px 25px 16px 0;
+}
+
+.subCat_img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.sc1{
+    cursor:pointer;
+}

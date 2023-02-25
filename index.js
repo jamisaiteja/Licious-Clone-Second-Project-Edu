@@ -20,9 +20,9 @@ document.addEventListener("scroll", onScroll);
 var locaText = document.querySelectorAll("#locaText");
 var locaBtn = document.querySelectorAll("#locationBtn");
 var city = document.querySelectorAll("#city");
-let weather = {
-    apikey: "03184be214402eaeb0a875622dccd906"
-};
+// let weather = {
+//     apikey: "03184be214402eaeb0a875622dccd906"
+// };
  // console.log(locaText,locaBtn,city);
 function showCities(){
     if(navigator.geolocation){
@@ -46,23 +46,28 @@ function onSuccess(position){
     let apikey = '132c358937004b65b7b14abfcc8f8f4e';
     let weatherapikey = "8688eee7e6c96843a290a39aae1d348c";
      // sending get request to the api with passing lat and long coordinates to the user position
-    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apikey}`)
-     //parsing json data into javascript object wuth returning iy and in another then function receiving the object that is sent by the api
-    .then(response => response.json()).then(result => {
-         let allDetails = result.results[0].components; //passing components obj to allDetails variable
-        console.log(allDetails);
-         let {country,county,postcode,state,state_district} = allDetails; //getting properties from allDetails
-        locaBtn.forEach((x)=>{
-            x.textContent=`${county},${country},${postcode}`;
-        })
+    // fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apikey}`)
+    //  //parsing json data into javascript object wuth returning iy and in another then function receiving the object that is sent by the api
+    // .then(response => response.json()).then(result => {
+    //      let allDetails = result.results[0].components; //passing components obj to allDetails variable
+    //     console.log(allDetails);
+    //      let {country,county,postcode,state,state_district} = allDetails; //getting properties from allDetails
+    //     locaBtn.forEach((x)=>{
+    //         x.textContent=`${county},${country},${postcode}`;
+    //     })
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherapikey}&units=metric`)
         .then(response=>response.json()).then(result=>{
             console.log(result)
             let {name} =result;
             let {description} = result.weather[0];
+            let {country} = result.sys;
             let {temp} =result.main;
+            console.log(name, description,temp,country)
             city.forEach((x)=>{
                 x.textContent= name + ', ' + temp + '\u00B0' + 'C'  + ', ' + description;
+            })
+            locaBtn.forEach((x)=>{
+                x.textContent=`${name}, ${country}`;
             })
         }).catch(()=>{
             locaText.forEach((x)=>{
@@ -70,11 +75,11 @@ function onSuccess(position){
             })
         })
 
-    }).catch(()=>{
-        locaText.forEach((x)=>{
-            x.textContent = "Something went wrong"
-        })
-    })
+    // }).catch(()=>{
+    //     locaText.forEach((x)=>{
+    //         x.textContent = "Something went wrong"
+    //     })
+    // })
 }
 
 function onError(error){
