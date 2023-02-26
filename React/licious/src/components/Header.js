@@ -23,7 +23,7 @@ class Header extends Component{
                 const subCat = item.subcategories
                 return (
                     <li key={item.id}>
-                        <Link to="/">
+                        <Link to={`/listing/${item.id}`}>
                             <img className="categories-dropdown-img" src={item.category_img} alt={item.category}/>
                             <span className="category-dropdown-title">{item.category}</span>
                         </Link>
