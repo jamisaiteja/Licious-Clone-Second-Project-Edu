@@ -1,0 +1,86 @@
+main{
+    /* background-color: #555353; */
+    background-color: #f7f6f6;
+    padding:6em 0 1em;
+    color:#4a4a4a;
+}
+
+.detailCard{
+    background-color: #fff;
+}
+
+/* .row{
+    display: flex;
+    justify-content: center;
+} */
+
+.imgWrappper{
+    margin:10px;
+}
+
+.content{
+    margin:10px;
+}
+
+.detailsImg{
+    width: 100%;
+    height: 100%;
+}
+
+.contentHeading{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color:#000;
+    padding:.2em 0 0 0;
+}
+
+.contentDes{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:#555555;
+}
+
+.weightSection{
+    border:.01em solid #000;
+    margin:.5em;
+    border-radius: 5px;
+    padding:.5em;
+}
+
+.subImg{
+    padding:.5em;
+}
+
+.sunDes{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color:rgba(0, 0, 0, 0.87);
+}
+
+.MRP{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #d11243;
+}
+
+.addToCartBtn{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #d11243;
+    height: 36px;
+    width: 100px;
+}
+
+.priceSection{
+    margin:1em 0 0 0;
+}

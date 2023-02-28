@@ -238,17 +238,16 @@ main{
     color:#4a4a4a;
 }
 
-.container{
+.detailCard{
     background-color: #fff;
 }
 
-.row{
+/* .row{
     display: flex;
     justify-content: center;
-    
-}
+} */
 
-.img-wrapper{
+.imgWrappper{
     margin:10px;
 }
 

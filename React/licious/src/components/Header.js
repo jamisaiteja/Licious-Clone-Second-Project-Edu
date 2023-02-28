@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import "./Header.css"
 import { Link } from 'react-router-dom';
+import { TailSpin } from 'react-loader-spinner';
 import Home from './Home/Home';
 import Search from './Home/Search';
 
@@ -39,6 +40,13 @@ class Header extends Component{
                     </li>
                 )
             })
+        }else{
+            return(
+                <div>
+                    <TailSpin type="TailSpin" color="#4a4a4a" height={50} width={50} />
+                    <h4 className="categoryHeading">Loading...</h4>
+                </div>
+            )
         }
     }
 
@@ -48,7 +56,7 @@ class Header extends Component{
         let weatherApiKey = "90d3dae1110b0e0bc9c8c5a914564578";
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherApiKey}&units=metric`)
         .then(response=>response.json()).then(result=>{
-            console.log(result)
+            // console.log(result)
             let {name} =result;
             let {description} = result.weather[0];
             let {country} = result.sys;

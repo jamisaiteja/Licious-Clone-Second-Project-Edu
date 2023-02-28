@@ -65,11 +65,11 @@ main a{
     padding:8px;
 }
 
-.card{
+/* .card{
     border-radius: 0 0 16px 16px;
     margin:0 .5em 1em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-}
+} */
 
 /* .card img{
     max-width: 100%;
@@ -81,7 +81,7 @@ main a{
     height:230px;
 } */
 
-.card-title{
+.cardTitle{
     font-family: 'Lato';
     font-size: 18px;
     font-weight: 600;
@@ -89,13 +89,20 @@ main a{
     color: #4a4a4a;
 }
 
-.card-text{
+.cardText{
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     color: #4a4a4a;
     margin-top: 1em;
     overflow: hidden;
+}
+
+.cardDeli{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #4a4a4a;
 }
 
 .weight{
@@ -126,7 +133,7 @@ main a{
     width: 100px;
 }
 
-.card span{
+.bCard span{
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
@@ -138,18 +145,18 @@ main a{
     margin:0 auto;
 } */
 
-.img-fluid{
+.imgFluid{
     max-width: 100%;
     max-height: 100%;
 }
 
-.Home_big_bottom_img_div__kf6K1 {
+/* .Home_big_bottom_img_div__kf6K1 {
     display: flex;
     justify-content: center;
     margin: 2% 0 ;
     object-fit: fill;
     width: 100%;
-}
+} */
 /*coupon*/
 
 .couponContainer{
@@ -254,7 +261,7 @@ main a{
     cursor: pointer;
 }
 
-.bcard {
+.bCard {
     min-width: 400px;
     max-width: 400px;
     border-radius: 0 0 16px 16px;
@@ -266,6 +273,6 @@ main a{
     /* color: white; */
 }
 
-.bcard-body{
-    padding: 10px;
+.bCardBody{
+    padding:.5em .5em 0;
 }

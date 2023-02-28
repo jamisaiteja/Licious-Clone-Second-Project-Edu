@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import { Link } from 'react-router-dom';
+import { TailSpin } from 'react-loader-spinner';
 import './Home.css';
 
 const curl = "https://nodetestapilicious.onrender.com/categories";
@@ -31,6 +32,13 @@ class Home extends Component {
                     
                 )
             })
+        }else{
+            return(
+                <div className="d-flex flex-column justify-content-center align-items-center" style={{height:"50vh"}}>
+                    <TailSpin type="TailSpin" color="#4a4a4a" height={50} width={50} />
+                    <h4 className="categoryHeading">Loading...</h4>
+                </div>
+            )
         }
     }
 
@@ -63,27 +71,36 @@ class Home extends Component {
         if(data){
             return data.map((item) => {
                 return (
-                    <div className="bcard" key={item.id}>
-                        <div className="img-wrapper">
-                            <img className="img-fluid" alt={item.name} src={item.imgUrl}/>
-                        </div>
-                        <div className="bcard-body">
-                            <h5 className="card-title">{item.name}</h5>
-                            <p className="card-text">{item.des}</p>
-                            <p className="weight">{item.net}{item.unit}</p>
-                            <div className="d-flex justify-content-between">
-                                <p className="MRP">{item.price_tag} {item.currency} {item.price}</p>
-                                <button className="addToCartBtn">Add to Cart</button>
+                    <div className="bCard" key={item.id}>
+                        <Link to={`/details?itemId=${item.id}`}>
+                            <div className="imgWrapper">
+                                <img className="imgFluid" alt={item.name} src={item.imgUrl}/>
                             </div>
-                            <hr/>
-                            <div className="text-center mt-3">
-                                <img src="https://i.ibb.co/qBP1zVh/ezgif-1-ce4f8999fb-removebg-preview.png" alt="bike-image"/>
-                                <span>Today in <b>90 min</b></span>
+                            <div className="bCardBody">
+                                <h5 className="cardTitle">{item.name}</h5>
+                                <p className="cardText">{item.des}</p>
+                                <p className="weight">{item.net}{item.unit}</p>
+                                <div className="d-flex justify-content-between">
+                                    <p className="MRP">{item.price_tag} {item.currency} {item.price}</p>
+                                    <button className="addToCartBtn">Add to Cart</button>
+                                </div>
+                                <hr/>
+                                <div className="text-center">
+                                    <img src="https://i.ibb.co/qBP1zVh/ezgif-1-ce4f8999fb-removebg-preview.png" alt="bike-image"/>
+                                    <span className="cardDeli">Today in <b>90 min</b></span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 )
             })
+        }else{
+            return(
+                <div className="d-flex flex-column justify-content-center align-items-center" style={{height:"50vh"}}>
+                    <TailSpin type="TailSpin" color="#4a4a4a" height={50} width={50} />
+                    <h4 className="categoryHeading">Loading...</h4>
+                </div>
+            )
         }
     }
 
