@@ -58,14 +58,14 @@ app.get('/bonelesscuts', function(req,res){
 app.get('/CategoryDetail/:catId', function(req,res){
     console.log(req.params.catId) 
     let catId = Number(req.params.catId)
-    let catType = req.query.catType;
-    console.log(req.query.catType)
+    let subCatId = req.query.subCatId;
+    console.log(req.query.subCatId)
     let query = {};
 
-    if(catType){
+    if(subCatId){
         query = {
             category_id:catId,
-            category_type:catType
+            subCategory_id:subCatId
         }
     }else{
         query = {
@@ -125,7 +125,7 @@ app.get('/orders', function(req,res){
 
 //Item Details
 
-app.post('/item',(req,res)=>{
+app.post('/product',(req,res)=>{
     if(Array.isArray(req.body.id)){
         db.collection('Details').find({id:{$in:req.body.id}}).toArray((err,data)=>{
             if(err) throw err;

@@ -1,22 +1,100 @@
-import React,{Component} from 'react';
+import React,{useState,useEffect} from 'react';
 import "./Header.css"
-import { Link } from 'react-router-dom';
+import { Link,withRouter } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
-import Home from './Home/Home';
-import Search from './Home/Search';
+import {useCart} from "../Context/cartContext";
 
-const curl = "https://nodetestapilicious.onrender.com/categories"
-class Header extends Component{
+const curl = "https://nodeliciousapi.onrender.com/categories";
+const url = "https://loginlicious.onrender.com/api/auth/userinfo"
+const Header =(props)=>{
 
-    state = {
-        categories: "",
-        locText:"",
-        city:"Select City",
-        locBtn:"Enter City"
-    };
-    
+    const [categories,setCategories] = useState();
+    const [locText,setLocText] = useState();
+    const [city,setCity] = useState("Select City");
+    const [locBtn,setLocBtn] = useState("Enter City");
+    const [cart,setCart] = useCart();
+    const [user,setUser] = useState("");
 
-    renderCategories = (data)=>{
+    const handleLogout = () => {
+        sessionStorage.setItem('loginStatus','loggedOut')
+        sessionStorage.setItem('userInfo','');
+        sessionStorage.removeItem('ltk')
+        setCart([]);
+        setUser('');
+        props.history.push('/')
+    }
+
+    const conditionlHeader = () => {
+        if(user.name){
+            let data =user
+            sessionStorage.setItem('loginStatus','loggedIn')
+            sessionStorage.setItem('userInfo',JSON.stringify(data))
+            return(
+                <>
+                    <li>
+                        <Link to='/login' className="link"><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="loginImg" className="menu-image"/><span className="title">Hi {data.name} </span></Link>
+                    </li>
+                    <li>
+                        <span className="link" onClick={()=>handleLogout()}><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="signupImg" className="menu-image"/><span className="title">Log Out</span></span>
+                    </li>
+                </>
+            )
+        }else{
+            return(
+                <>
+                    <li>
+                        <Link to='/login' className="link"><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="loginImg" className="menu-image"/><span className="title">Login</span></Link>
+                    </li>
+                    <li>
+                        <Link to='/register' className="link"><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="signupImg" className="menu-image"/><span className="title">Sign up</span></Link>
+                    </li>
+                </>
+            )
+        }
+    }
+
+    const conditionlHeader2 = () => {
+        if(user.name){
+            let data =user
+            sessionStorage.setItem('loginStatus','loggedIn')
+            sessionStorage.setItem('userInfo',JSON.stringify(data))
+            return(
+                <>
+                    <li className="col-3">
+                        <Link to='/login' className="link">
+                            <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt="Search"/></div>
+                            <div className="title">Hi {data.name} </div>
+                        </Link>
+                    </li>
+                    <li className="col-3">
+                        <span className="link" onClick={()=>handleLogout()}>
+                            <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt="Search"/></div>
+                            <div className="title">Logout </div>
+                        </span>
+                    </li>
+                </>
+            )
+        }else{
+            return(
+                <>
+                    <li className="col-3">
+                        <Link to='/login' className="link">
+                            <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt="Search"/></div>
+                            <div className="title">Login </div>
+                        </Link>
+                    </li>
+                    <li className="col-3">
+                        <Link to='/register' className="link">                            
+                            <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt="Search"/></div>
+                            <div className="title">Sign Up </div>
+                        </Link>
+                    </li>
+                </>
+            )
+        }
+    }
+
+    const renderCategories = (data)=>{
         // console.log(data)
         if(data){
             return data.map((item) => {
@@ -50,8 +128,8 @@ class Header extends Component{
         }
     }
 
-    onSuccess =(position)=>{
-        this.setState({locBtn:"Detecting location..."})
+    const onSuccess =(position)=>{
+        setLocBtn("Detecting location...")
         let {latitude, longitude} = position.coords;
         let weatherApiKey = "90d3dae1110b0e0bc9c8c5a914564578";
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherApiKey}&units=metric`)
@@ -61,36 +139,60 @@ class Header extends Component{
             let {description} = result.weather[0];
             let {country} = result.sys;
             let {temp} =result.main;
-            this.setState({locBtn:`${name} , ${country}`})
-            this.setState({city:name + ', ' + temp + '\u00B0' + 'C'  + ', ' + description})
+            setLocBtn(`${name} , ${country}`)
+            setCity(name + ', ' + temp + '\u00B0' + 'C'  + ', ' + description)
         }).catch(()=>{
-            this.setState({locText:"Something went wrong"})
+            setLocText("Something went wrong")
         })   
     }
 
-    onError = (error) =>{
+    const onError = (error) =>{
         if(error.code === 1){ //if user denied the request
-            this.setState({locText:"You denied the request"})
+            setLocText("You denied the request")
          }else if(error.code === 2){ // if location is not available
-            this.setState({locText:"Location not available"})
+            setLocText("Location not available")
          }else{ // if any other error occured
-            this.setState({locText:"Something went wrong"})
+            setLocText("Something went wrong")
         }
     }
 
-    renderLocation = ()=>{
+    const renderLocation = ()=>{
         if(navigator.geolocation){
-            this.setState({locBtn:"Allow to detect location"})
-            navigator.geolocation.getCurrentPosition(this.onSuccess,this.onError)
+            setLocBtn("Allow to detect location")
+            navigator.geolocation.getCurrentPosition(onSuccess,onError)
         }else{
-            this.setState({locText:"Browser Does Not Support"})
+            setLocText("Browser Does Not Support")
         }
     }
+    useEffect(()=>{
+        fetch(curl,{method:'GET'})
+            .then((res) => res.json())
+            .then((data) => {
+                setCategories(data)
+            })
 
-    render(){
+        fetch(url,{
+            method:'GET',
+            headers:{
+                'x-access-token':sessionStorage.getItem('ltk')
+            }
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            setUser(data)
+        })
+
+        {renderLocation()}
+
+        
+    },[]);
+    
+    
+
+    // render(){
         return (
             <header className="fixed-top" id="header">
-            <div className="top-nav">
+            {/* <div className="top-nav">
                 <div className="container">
                     <div className="row firstDiv">
                         <div className="col-12 col-md-6 d-none d-md-block top-nav-menu">
@@ -131,7 +233,7 @@ class Header extends Component{
                         </div>
                     </div>          
                 </div>
-            </div>
+            </div> */}
             <div className="sub-header" id="subHeader-container">
                 <div className="container">
                     <div className="row">
@@ -140,18 +242,18 @@ class Header extends Component{
                                 <div className="secondDiv">
                                     
                                     <div className="logo"> 
-                                        <Link to="/"><img className="LiciousLogo" src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="Licious"/></Link>
+                                        <Link to="/"><img className="liciousLogo" src="https://www.licious.in/image/rebranding/svg/licious-logo.svg" alt="Licious"/></Link>
                                     </div>
                 
                                     <div className="locationContainer">
                                         <div className="loca">
-                                            <img src="https://www.licious.in/img/default/location_icon.svg" alt="location_img"/>
+                                            <img src="https://www.licious.in/image/rebranding/svg/location-pin.svg" alt="location_img"/>
                                         </div>
                                         
                                         <div className="locText"> 
-                                            <p id="city">{this.state.city}</p>
-                                            <button id="locationBtn" className="location title">{this.state.locBtn}</button>
-                                            <p id="locaText">{this.state.locText}</p>
+                                            <p id="city">{city}</p>
+                                            <button id="locationBtn" className="location title">{locBtn}</button>
+                                            <p id="locaText">{locText}</p>
                                         </div>
                                     </div>
                 
@@ -159,7 +261,7 @@ class Header extends Component{
                                         <div id="search" className="search">
                                             <Link to="/search" className="search-content">
                                                 <span>Search for any delicious product</span>
-                                                <img src="https://www.licious.in/img/default/search_icon.svg" alt="SearchImg"/>
+                                                <img src="https://www.licious.in/image/search_venus_icon.svg" alt="SearchImg"/>
                                             </Link>
                                         </div>
                                     </div>
@@ -168,22 +270,17 @@ class Header extends Component{
                                     <div className="menu-bar mt-3">
                                         <ul>
                                             <li>
-                                                <Link to="/" className="link"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="categoryImg" className="menu-image"/><span className="title">Categories</span></Link>
+                                                <Link to="/search" className="link"><img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg" alt="categoryImg" className="menu-image"/><span className="title">Categories</span></Link>
                                                 <div className="dropdown-menu">
                                                     <ul>
-                                                        {this.renderCategories(this.state.categories)}
+                                                        {renderCategories(categories)}
                                                     </ul>
                                                 </div>
                                                 
                                             </li>
+                                            {conditionlHeader()}
                                             <li>
-                                                <Link to='/login' className="link"><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="loginImg" className="menu-image"/><span className="title">Login</span></Link>
-                                            </li>
-                                            <li>
-                                                <Link to='/login' className="link"><img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png" alt="signupImg" className="menu-image"/><span className="title">Sign up</span></Link>
-                                            </li>
-                                            <li>
-                                                <Link to="/cart" className="link"><img src="https://m.licious.in/image/rebranding/png/Cart_v2.png" alt="addToCart" className="menu-image"/><span className="title">Cart</span></Link>
+                                                <Link to="/cart" className="link"><span><img src="https://m.licious.in/image/rebranding/png/Cart_v2.png" alt="addToCart" className="menu-image"/><span className='cartLength'>{cart?.length}</span></span><span className="title">Cart</span></Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -192,19 +289,25 @@ class Header extends Component{
                         </div>
                         <div className="col-11 d-block d-md-none">
                             <div className="container">
-                                <div className="locationContainer">
-                                    <div className="loca">
-                                        <img src="https://www.licious.in/img/default/location_icon.svg" alt="location_img"/>
+                                <div className='row'>
+                                    <div className="locationContainer col-9">
+                                        <div className="loca">
+                                            <img src="https://www.licious.in/image/rebranding/svg/location-pin.svg" alt="location_img"/>
+                                        </div>
+                    
+                            
+                                        <div className="locText"> 
+                                                <p id="city">{city}</p>
+                                                <button id="locationBtn" className="location title">{locBtn}</button>
+                                                <p id="locaText">{locText}</p>
+                                        </div>
                                     </div>
-                
-                        
-                                    <div className="locText"> 
-                                            <p id="city">{this.state.city}</p>
-                                            <button id="locationBtn" className="location title" onClick="showCities()">{this.state.locBtn}</button>
-                                            <p id="locaText">{this.state.locText}</p>
-                                    </div>
-                
                                     
+                                    <li className="col-3 m-auto">
+                                        <Link to="/cart" className="link">
+                                            <span><img src="https://m.licious.in/image/rebranding/png/Cart_v2.png" alt="addToCart" className="menu-image"/><span className='cartLength'>{cart?.length}</span></span><span className="title">Cart</span>
+                                        </Link>
+                                    </li>
                                 </div>
                                 <div className="row secondDiv sub-header fixed-bottom text-center">
                                     <div className="col-3">
@@ -219,21 +322,23 @@ class Header extends Component{
                                             <div className="title">Categories</div>
                                         </Link>
                                     </div>
-                                    <div className="col-3">
-                                        <Link to='/search'>
-                                            <div><img src="https://i.ibb.co/dDMPLbL/ezgif-2-6eec814230.png" alt="Search"/></div>
-                                            <div className="title">Search</div>
+                                    {/* <div className="col-3">
+                                        <Link to='/'>
+                                            <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt="Search"/></div>
+                                            <div className="title">Sign up</div>
                                         </Link>
                                     </div>
                                     <div className="col-3">
                                         <Link to='/'>
                                             <div><img src="https://i.ibb.co/MD7THHq/ezgif-2-de2adde4aa.png" alt="Account"/></div>
-                                            <div className="title">Account</div>
+                                            <div className="title">Login</div>
                                         </Link>
-                                    </div>
+                                    </div> */}
+                                    {conditionlHeader2()}
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="col-1 light-dark-mode p-1">
                             <Link to="/"><img src="https://i.ibb.co/2tzw6HC/lightoff-removebg-preview.png" alt="lightOffRemoveBg-preview"  id="light" className="bulbImg"/></Link>
                         </div>
@@ -243,22 +348,18 @@ class Header extends Component{
             
         </header>
         )
-    }
+    // }
 
     //api calling on page load
-    componentDidMount(){
-        fetch(curl,{method:'GET'})
-        .then((res) => res.json())
-        .then((data) => {
-            this.setState({categories:data})
-        })
+    // componentDidMount(){
+    //     fetch(curl,{method:'GET'})
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //         this.setState({categories:data})
+    //     })
 
-        // navigator.geolocation.getCurrentPosition(function(position){
-        //     console.log(`Longi:${position.coords.longitude}, latti: ${position.coords.latitude}`)
-        // })
-
-        {this.renderLocation()}
-    }
+    //     {this.renderLocation()}
+    // }
 }
 
-export default Header;
+export default withRouter(Header);

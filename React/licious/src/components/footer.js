@@ -6,7 +6,7 @@ const Footer =()=>{
         <footer>
         <div className="container pt-3">
             <div className="logo mb-3"> 
-                <a href="/index.html"><img className="LiciousLogo" src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="Licious"/></a>
+                <a href="/index.html"><img className="liciousLogo" src="https://www.licious.in/image/rebranding/svg/licious-logo.svg" alt="Licious"/></a>
             </div>
             <div className="row">
                 <div className="col-12 col-md-6">
@@ -82,10 +82,10 @@ const Footer =()=>{
                                     </li>
                                     <li className="download mt-2">
                                         <a href="https://itunes.apple.com/in/app/buy-meat-online-licious/id1052440342?mt=8" target="_blank">
-                                            <img alt="App store" src="https://www.licious.in/img/rebranding/app-store-new.svg"/>
+                                            <img alt="App store" src="https://www.licious.in/image/rebranding/png/app-store-homepage.png"/>
                                         </a>
                                         <a href="https://play.google.com/store/apps/details?id=com.licious" target="_blank">
-                                            <img alt="Play store" src="https://www.licious.in/img/rebranding/play-store-new.png"/>
+                                            <img alt="Play store" src="https://www.licious.in/image/rebranding/png/playstore-homepage.png"/>
                                         </a>
                                     </li>
                                 </ul>
@@ -166,7 +166,7 @@ const Footer =()=>{
                 <div>
                     <ul className="verified-pay">
                         <li className="veri">
-                            <img alt="visa-mastercard-img" src="https://www.licious.in/img/rebranding/3-dsecure.png"/>
+                            <img alt="visa-mastercard-img" src="https://www.licious.in/image/rebranding/png/3-dsecure.png"/>
                         </li>
                     </ul>
                 </div>

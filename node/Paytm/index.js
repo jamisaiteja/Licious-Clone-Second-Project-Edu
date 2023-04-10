@@ -27,7 +27,7 @@ app.post("/paynow", [parseUrl, parseJson], (req, res) => {
     customerId: req.body.name,
     customerEmail: req.body.email,
     customerPhone: req.body.phone,
-    customerRest: req.body.rest_name
+    // customerRest: req.body.rest_name
 }
 if(!paymentDetails.amount || !paymentDetails.customerId || !paymentDetails.customerEmail || !paymentDetails.customerPhone ) {
   res.status(400).send('Payment failed')
@@ -40,7 +40,7 @@ if(!paymentDetails.amount || !paymentDetails.customerId || !paymentDetails.custo
     params['ORDER_ID'] = 'TEST_'  + paymentDetails.orderID;
     params['CUST_ID'] = paymentDetails.customerId;
     params['TXN_AMOUNT'] = paymentDetails.amount;
-    /* where is app is hosted (heroku url)*/
+    /* where is app is hosted */
     params['CALLBACK_URL'] = 'http://localhost:4100/callback';
     params['EMAIL'] = paymentDetails.customerEmail;
     params['MOBILE_NO'] = paymentDetails.customerPhone;
@@ -67,7 +67,7 @@ app.post("/callback", (req, res) => {
   var body = '';
 
   req.on('data', function (data) {
-    body += data;
+     body += data;
   });
 
    req.on('end', function () {
@@ -118,7 +118,7 @@ app.post("/callback", (req, res) => {
            console.log(">>>>>".response)
            var _results = JSON.parse(response);
            /* where it will come back after payment*/
-           res.redirect(`http://localhost:4100/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
+           res.redirect(`http://localhost:3000/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
            });
        });
 

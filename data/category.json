@@ -16,7 +16,7 @@
             },
             {
                 "subCategory_id": 2,
-                "subCategory_name": "Boneless &amp; Mince"
+                "subCategory_name": "Boneless & Mince"
             },
             {
                 "subCategory_id": 3,
@@ -29,10 +29,6 @@
             {
                 "subCategory_id": 5,
                 "subCategory_name": "Combos"
-            },
-            {
-                "subCategory_id": 6,
-                "subCategory_name": "Ready to Cook"
             }
         ]
     },
@@ -51,10 +47,6 @@
             },
             {
                 "subCategory_id": 3,
-                "subCategory_name": "Ready to Cook"
-            },
-            {
-                "subCategory_id": 4,
                 "subCategory_name": "Crab"
             }
         ]
@@ -70,7 +62,7 @@
             },
             {
                 "subCategory_id": 2,
-                "subCategory_name": "Boneless &amp; Mince"
+                "subCategory_name": "Boneless & Mince"
             },
             {
                 "subCategory_id": 3,
@@ -83,10 +75,6 @@
             {
                 "subCategory_id": 5,
                 "subCategory_name": "Combos"
-            },
-            {
-                "subCategory_id": 6,
-                "subCategory_name": "Ready to Cook"
             }
         ]
     },
@@ -101,7 +89,7 @@
             },
             {
                 "subCategory_id": 2,
-                "subCategory_name": "Kebabs &amp; Tandoor"
+                "subCategory_name": "Kebabs & Tandoor"
             },
             {
                 "subCategory_id": 3,
@@ -141,14 +129,6 @@
             {
                 "subCategory_id": 3,
                 "subCategory_name": "Large Size"
-            },
-            {
-                "subCategory_id": 4,
-                "subCategory_name": "Combos"
-            },
-            {
-                "subCategory_id": 5,
-                "subCategory_name": "Ready to Cook"
             }
         ]
     },
@@ -214,10 +194,6 @@
             {
                 "subCategory_id": 3,
                 "subCategory_name": "Combos"
-            },
-            {
-                "subCategory_id": 4,
-                "subCategory_name": "Spreads"
             }
         ]
     },
